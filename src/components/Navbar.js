@@ -3,7 +3,7 @@ import React from "react"
 export default function Navbar(props) {
     return (
          <nav className={props.darkMode ? "dark": ""}>
-            <img className="nav--logo_icon" src="./images/reactjs-icon.png"/>
+            <img className="nav--logo_icon" src={process.env.PUBLIC_URL + "/images/reactjs-icon.png"} alt=""/>
             <h3 className="nav--logo_text">ReactFatos</h3>
             
             <div className="toggler">
